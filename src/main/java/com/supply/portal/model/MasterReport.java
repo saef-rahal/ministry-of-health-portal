@@ -1,11 +1,12 @@
 package com.supply.portal.model;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 
 /**
  * Created by saef rahal on 3/27/2020.
  */
-
 public class MasterReport {
 
     private String stateName;
@@ -13,23 +14,23 @@ public class MasterReport {
     private String categoryName;
     private String itemName;
     private String unitName;
-    private int supplyRequestQuantity;
-    private int deliveredQuantity;
-    private int remainingQuantity;
+    private Number supplyRequestQuantity;
+    private Number deliveredQuantity;
+    private Number remainingQuantity;
 
     public MasterReport() {
 
     }
 
-    public MasterReport(String stateName, String hospitalName, String categoryName, String itemName, String unitName, int supplyRequestQuantity, int deliveredQuantity, int remainingQuantity) {
-        this.stateName = stateName;
-        this.hospitalName = hospitalName;
-        this.categoryName = categoryName;
-        this.itemName = itemName;
-        this.unitName = unitName;
-        this.supplyRequestQuantity = supplyRequestQuantity;
-        this.deliveredQuantity = deliveredQuantity;
-        this.remainingQuantity = remainingQuantity;
+    public MasterReport(Object stateName, Object hospitalName, Object categoryName, Object itemName, Object unitName, Object supplyRequestQuantity, Object deliveredQuantity, Object remainingQuantity) {
+        this.stateName = (String) stateName;
+        this.hospitalName = (String) hospitalName;
+        this.categoryName = (String) categoryName;
+        this.itemName = (String) itemName;
+        this.unitName = (String) unitName;
+        this.supplyRequestQuantity = (Number) supplyRequestQuantity;
+        this.deliveredQuantity = (Number) deliveredQuantity;
+        this.remainingQuantity = (Number) remainingQuantity;
     }
 
     public String getStateName() {
@@ -72,27 +73,27 @@ public class MasterReport {
         this.unitName = unitName;
     }
 
-    public int getSupplyRequestQuantity() {
+    public Number getSupplyRequestQuantity() {
         return supplyRequestQuantity;
     }
 
-    public void setSupplyRequestQuantity(int supplyRequestQuantity) {
+    public void setSupplyRequestQuantity(Number supplyRequestQuantity) {
         this.supplyRequestQuantity = supplyRequestQuantity;
     }
 
-    public int getDeliveredQuantity() {
+    public Number getDeliveredQuantity() {
         return deliveredQuantity;
     }
 
-    public void setDeliveredQuantity(int deliveredQuantity) {
+    public void setDeliveredQuantity(Number deliveredQuantity) {
         this.deliveredQuantity = deliveredQuantity;
     }
 
-    public int getRemainingQuantity() {
+    public Number getRemainingQuantity() {
         return remainingQuantity;
     }
 
-    public void setRemainingQuantity(int remainingQuantity) {
+    public void setRemainingQuantity(Number remainingQuantity) {
         this.remainingQuantity = remainingQuantity;
     }
 }

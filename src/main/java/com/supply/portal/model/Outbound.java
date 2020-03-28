@@ -1,6 +1,7 @@
 package com.supply.portal.model;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 /**
  * Created by saef rahal on 3/26/2020.
@@ -30,7 +31,7 @@ public class Outbound {
     private Item item;
 
     @Column( name = "delivered_quantity")
-    private int deliveredQuantity;
+    private Number deliveredQuantity;
 
     public Outbound() {
 
@@ -76,11 +77,11 @@ public class Outbound {
         this.item = item;
     }
 
-    public int getDeliveredQuantity() {
+    public Number getDeliveredQuantity() {
         return deliveredQuantity;
     }
 
-    public void setDeliveredQuantity(int deliveredQuantity) {
+    public void setDeliveredQuantity(Number deliveredQuantity) {
         this.deliveredQuantity = deliveredQuantity;
     }
 }

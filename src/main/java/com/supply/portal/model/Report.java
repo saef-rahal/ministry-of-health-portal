@@ -3,6 +3,7 @@ package com.supply.portal.model;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -33,7 +34,7 @@ public class Report {
     private Item item;
 
     @Column( name = "supply_request_quantity")
-    private int supplyRequest;
+    private Number supplyRequest;
 
     @CreatedDate
     @Column( name = "create_date")
@@ -85,11 +86,11 @@ public class Report {
         this.item = item;
     }
 
-    public int getSupplyRequest() {
+    public Number getSupplyRequest() {
         return supplyRequest;
     }
 
-    public void setSupplyRequest(int supplyRequest) {
+    public void setSupplyRequest(Number supplyRequest) {
         this.supplyRequest = supplyRequest;
     }
 
