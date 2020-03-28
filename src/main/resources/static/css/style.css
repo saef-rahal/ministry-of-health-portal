@@ -1,0 +1,71 @@
+a, .page-link {
+    color: #28a745;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.wrap {
+    min-height: 100vh;
+}
+
+.page-item.active .page-link {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+button, a.btn {
+    width: 120px;
+}
+/* .alert-add {
+    display: none;
+} */
+
+header {
+    border-bottom: 1px solid #f2f2f3 !important;
+}
+
+#jumbotron {
+    background-image: url(../images/texture.png);
+    background-repeat: repeat;
+    background-color: rgba(200, 200, 200, 0.4);
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 1.2rem;
+}
+
+}
+
+
+input, select  {
+    height: 40px !important;
+}
+
+.login-wrap {
+        width: 33.33%;
+}
+
+
+@media (max-width: 768px) {
+    .login-wrap {
+        width: 60%;
+}
+
+}
+
+@media (max-width: 576px) {
+    .login-wrap {
+        width: 95%;
+}
+
+}
+
+.form-check {
+    margin-right: 20px;
+}
